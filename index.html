@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>TextSumEval-2022</title>
+      <link rel="icon" type="image/png" href="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/000000/external-paper-art-and-design-studio-xnimrodx-lineal-color-xnimrodx.png"/>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+
+<!-- navbar -->
+      <header class="nav-scroll fixed-top mh-xss-mobile-nav">
+         <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+               <a class="navbar-brand" href="#">
+               <img src="images/logo.png" alt=""width="195" 
+                  height="60">
+               </a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item active">
+                        <a class="nav-link" href="#abs">Abstract<span class="sr-only">(current)</span></a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#data">Data</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#date">Important Dates</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+      </header>
+
+<!-- Head -->
+      <section>
+         <center>
+            <br><br><br><br>
+            <div class="header-details">
+               <h1>TextSumEval<span>-2022</span></h1>
+               <p>A Task By CNLP-NITS</p>
+               <button class="get-btn"><a href="#date" style="color:  white;text-decoration: none;">Important Dates</a></button>
+            </div>
+         </center>
+      </section>
+      
+<!-- abstract -->
+      <section id="abs">
+         <br><br>
+         <center>
+            <div class="card" style="width: 90%;">
+               <div class="card-body">
+                  <h2 class="text-center title-text">Abstruct</h2>
+                  <p class="card-text" style="text-align: justify; padding: 0px 25px 25px 25px;">Automatic summarization is one of the most difficult tasks in Natural Language Processing as it requires a comprehensive understanding of input documents, identification of relevant content, and generation of a synthetic perspective of the document, often subject to a length constraint. Yet, this task is very important in the context of the deluge of varying quality information our generation has to tackle. Building better summarization systems requires progress in summarization evaluation metrics, which are used to assess the quality of the summaries they produce. There is two current trends to summarization evaluation: manual and automatic evaluation. Manual evaluation consists in ranking summaries or parts of summaries according to a set of factors such as faithfulness to the original, linguistic fluency. The automatic evaluation focuses more on comparing the system production to a set of human-authored summaries deemed a gold standard. Manual evaluation is more accurate but much more costly than automatic evaluation, and it is often not actionable in a machine learning environment (systems require rapid and repeated evaluation of their output in order to learn how to summarize). Current methods for automatic evaluation fail because they involve a too candid representation of meaning (through word n-grams for ROUGE, for example), a problem which has been identified as a major hurdle for the advancement of the field. So, the aim of this shared task is to design an automatic evaluation system for system generated summaries where the evaluation system will compare the test summaries with gold summaries and estimate their relevance in terms of BLUE, and ROUGE scores.</p>
+               </div>
+            </div>
+         </center>
+      </section>
+
+<!-- Key steps -->
+      <section>
+         <div class="container py-2 mt-4 mb-4">
+         <h2 class="text-center title-text">Key Steps</h2>
+         <div class="row no-gutters">
+            <div class="col-sm">
+            </div>
+            <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+               <div class="row h-50">
+                  <div class="col">&nbsp;</div>
+                  <div class="col">&nbsp;</div>
+               </div>
+               <h5 class="m-2">
+                  <span class="badge badge-pill bg-light border">&nbsp;</span>
+               </h5>
+               <div class="row h-50">
+                  <div class="col border-right">&nbsp;</div>
+                  <div class="col">&nbsp;</div>
+               </div>
+            </div>
+
+            <div class="col-sm py-2">
+               <div class="card">
+                  <div class="card-body">
+                     <h4 class="card-title">Input</h4>
+                     <p class="card-text">Test Summaries and Gold Summaries.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row no-gutters">
+            <div class="col-sm py-2">
+               <div class="card">
+                  <div class="card-body">
+                     <h4 class="card-title">System</h4>
+                     <p class="card-text">An automatic evaluation system which compares the test summaries with gold summaries</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+               <div class="row h-50">
+                  <div class="col border-right">&nbsp;</div>
+                  <div class="col">&nbsp;</div>
+               </div>
+               <h5 class="m-2">
+                  <span class="badge badge-pill bg-light border">&nbsp;</span>
+               </h5>
+               <div class="row h-50">
+                  <div class="col border-right">&nbsp;</div>
+                  <div class="col">&nbsp;</div>
+               </div>
+            </div>
+            <div class="col-sm">
+            </div>
+         </div>
+         <div class="row no-gutters">
+            <div class="col-sm">
+               <!--spacer--> 
+            </div>
+            <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+               <div class="row h-50">
+                  <div class="col border-right">&nbsp;</div>
+                  <div class="col">&nbsp;</div>
+               </div>
+               <h5 class="m-2">
+                  <span class="badge badge-pill bg-light border">&nbsp;</span>
+               </h5>
+               <div class="row h-50">
+                  <div class="col border-right">&nbsp;</div>
+                  <div class="col">&nbsp;</div>
+               </div>
+            </div>
+            <div class="col-sm py-2">
+               <div class="card">
+                  <div class="card-body">
+                     <h4 class="card-title">Output</h4>
+                     <p>BLUE and ROUGE score for each test summary.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+<!-- Data download -->
+      <section class="video-section" id="data">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 col-lg-9 mx-auto">
+                  <div class="subscribe-inner text-center">
+                     <h2>Test Data</h2>
+                     <a href="#" class="get-btn"><i class="fa fa-download"></i> Download</a>                        
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+<!-- dates -->
+      <section id="date">
+         <center>
+            <div class="card" style="width: 90%;">
+               <div class="card-body">
+                  <h2 class="text-center title-text">Important Dates</h2>
+                  <div class="table-responsive">
+                     <table class="table text-center">
+                        <thead>
+                           <tr>
+                              <th class="th-lg">Date</th>
+                              <th class="th-lg">Event</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>Task Registration</td>
+                              <td>01 March, 2022</td>
+                           </tr>
+                           <tr>
+                              <td>Data Released</td>
+                              <td>15 March, 2022</td>
+                           </tr>
+                           <tr>
+                              <td>Registration Closed</td>
+                              <td>30 April, 2022</td>
+                           </tr>
+                           <tr>
+                              <td>Result Submission</td>
+                              <td>30 May, 2022</td>
+                           </tr>
+                           <tr>
+                              <td>Result Declaration</td>
+                              <td>15 June, 2022</td>
+                           </tr>
+                           <tr>
+                              <td>Working note submission</td>
+                              <td>25 June, 2022</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+            <br><br>
+         </center>
+      </section>
+
+<!-- anouncement -->
+      <section class="video-section">
+         <h2 class="text-center title-text">Announcement</h2>
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <center>
+                     <ul class="list-group">
+                        <!-- <li class="list-group-item"><i class="fa fa-bell" aria-hidden="true">Change the text</i></li> -->
+                        <li class="list-group-item"><i class="fa fa-bell" aria-hidden="true"> The page will be updated, please wait.</i></li>
+                     </ul>
+               </div>
+               </center>
+            </div>
+         </div>
+     </section>
+      
+<!-- team -->
+      <section class="team text-center py-5">
+         <div class="container">
+            <div class="header my-5">
+               <h2 class="text-center title-text">Organizers</h2>
+            </div>
+            <div class="row">
+               <div class="col-md-6 col-lg-3">
+                  <div class="img-block mb-5">
+                     <img src="/images/1.png" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                     <div class="content mt-2">
+                        <h4>Prof. Sivaji Bandyopadhyay</h4>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-3 ">
+                  <div class="img-block mb-5">
+                     <img src="/images/2.png" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                     <div class="content mt-2">
+                        <h4>Dr. Partha Pakray</h4>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-3">
+                  <div class="img-block mb-5">
+                     <img src="/images/3.png" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                     <div class="content mt-2">
+                        <h4>Dr. Benoit Favre</h4>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-3">
+                  <div class="img-block mb-5">
+                     <img src="/images/4.png" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                     <div class="content mt-2">
+                        <h4>Pr. Thierry Artières</h4>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- we -->
+            <h2 class="text-center title-text">Task Coordinators</h2>
+            <div class="row">
+               <div class="col-md-6 col-lg-3">
+                  <div class="img-block mb-5">
+                     <img src="/images/5.png" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                     <div class="content mt-2">
+                        <h4>Pankaj Dadure</h4>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-3 ">
+                  <div class="img-block mb-5">
+                     <img src="/images/6.png" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                     <div class="content mt-2">
+                        <h4>Sahinur R. Laskar</h4>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-3">
+                  <div class="img-block mb-5">
+                     <img src="/images/7.png" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                     <div class="content mt-2">
+                        <h4>Tawmo</h4>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-3">
+                  <div class="img-block mb-5">
+                     <img src="/images/8.png" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                     <div class="content mt-2">
+                        <h4>Prottay Adhikary</h4>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+<!-- Contact us -->
+      <section class="subscribe-section" id="contact">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 col-lg-9 mx-auto">
+                  <div class="subscribe-inner text-center">
+                     <h2>Contact Us</h2>
+                     <h5><i class="fa fa-phone" aria-hidden="true"> Partha Pakray: +91 82590 65018</i></h5>
+                     <h5><i class="fa fa-phone" aria-hidden="true"> Pankaj Dadure: +91 95457 57478</i></h5>
+                     <br>
+                     <a href="" class="get-btn">E-Mail Us</a>                        
+                  </div>
+               </div>
+            </div>
+         </div>
+
+<!-- footer --> 
+      <footer class="footer-section">
+         <div class="container">
+            <div class="copyright text-center">
+               <small>©2022,CNLP-NITS</small>
+            </div>
+         </div>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+   </body>
+</html>
