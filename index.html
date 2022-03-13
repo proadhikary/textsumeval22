@@ -62,7 +62,7 @@
             <div class="card" style="width: 90%;">
                <div class="card-body">
                   <h2 class="text-center title-text">Abstract</h2>
-                  <p class="card-text" style="text-align: justify; padding: 0px 25px 25px 25px;">Automatic summarization is one of the most difficult tasks in Natural Language Processing as it requires a comprehensive understanding of input documents, identification of relevant content, and generation of a synthetic perspective of the document, often subject to a length constraint. Yet, this task is very important in the context of the deluge of varying quality information our generation has to tackle. Building better summarization systems requires progress in summarization evaluation metrics, which are used to assess the quality of the summaries they produce. There is two current trends to summarization evaluation: manual and automatic evaluation. Manual evaluation consists in ranking summaries or parts of summaries according to a set of factors such as faithfulness to the original, linguistic fluency. The automatic evaluation focuses more on comparing the system production to a set of human-authored summaries deemed a gold standard. Manual evaluation is more accurate but much more costly than automatic evaluation, and it is often not actionable in a machine learning environment (systems require rapid and repeated evaluation of their output in order to learn how to summarize). Current methods for automatic evaluation fail because they involve a too candid representation of meaning (through word n-grams for ROUGE, for example), a problem which has been identified as a major hurdle for the advancement of the field. So, the aim of this shared task is to design an automatic evaluation system for system generated summaries where the evaluation system will compare the test summaries with gold summaries and estimate their relevance in terms of BLUE, and ROUGE scores.</p>
+                  <p class="card-text" style="text-align: justify; padding: 0px 25px 25px 25px;">Automatic summarization is one of the most difficult tasks in Natural Language Processing as it requires a comprehensive understanding of input documents, identification of relevant content, and generation of a synthetic perspective of the document, often subject to a length constraint. Yet, this task is very important in the context of the deluge of varying quality information our generation has to tackle. Building better summarization systems requires progress in summarization evaluation metrics, which are used to assess the quality of the summaries they produce. There is two current trends to summarization evaluation: manual and automatic evaluation. Manual evaluation consists in ranking summaries or parts of summaries according to a set of factors such as faithfulness to the original, linguistic fluency. The automatic evaluation focuses more on comparing the system production to a set of human-authored summaries deemed a gold standard. Manual evaluation is more accurate but much more costly than automatic evaluation, and it is often not actionable in a machine learning environment (systems require rapid and repeated evaluation of their output in order to learn how to summarize). Current methods for automatic evaluation fail because they involve a too candid representation of meaning (through word n-grams for ROUGE, for example), a problem which has been identified as a major hurdle for the advancement of the field. So, the aim of this shared task is to design an automatic evaluation system for system generated summaries where the evaluation system will compare the test summaries with gold summaries and estimate their relevance in terms of BLUE, ROUGE and <a href="https://link.springer.com/article/10.1007/s10489-020-02144-x" style="color:black;text-decoration: none;">Semantic score.</a> Based on the regorous review, the working note of the shared task will be published in <a href="http://icicsa.nits.ac.in/" style="color:black;text-decoration: none;">ICICSA-2022.</a></p>
                </div>
             </div>
          </center>
@@ -102,8 +102,8 @@
             <div class="col-sm py-2">
                <div class="card">
                   <div class="card-body">
-                     <h4 class="card-title">Evaluate</h4>
-                     <p class="card-text">An automatic evaluation system which compares the test summaries with gold summaries</p>
+                     <h4 class="card-title">System Development</h4>
+                     <p class="card-text">An automatic evaluation system need to be developed which compares the test summaries with the gold summaries and evaluate the Semantic scores which should be normalized between 0 to 100.</p>
                   </div>
                </div>
             </div>
@@ -144,9 +144,34 @@
                <div class="card">
                   <div class="card-body">
                      <h4 class="card-title">Output</h4>
-                     <p>BLUE and ROUGE score for each test summary.</p>
+                     <p>Participants need to submit the results in CSV format.</p>
                   </div>
                </div>
+            </div>
+         </div>
+          <div class="row no-gutters">
+            <div class="col-sm py-2">
+               <div class="card">
+                  <div class="card-body">
+                     <h4 class="card-title">System Evaluation</h4>
+                     <p class="card-text"> The submitted score will be varified by the organizer in terms of <b>Semantic</b> and <b>Human evaluation score</b>.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+               <div class="row h-50">
+                  <div class="col border-right">&nbsp;</div>
+                  <div class="col">&nbsp;</div>
+               </div>
+               <h5 class="m-2">
+                  <span class="badge badge-pill bg-light border">&nbsp;</span>
+               </h5>
+               <div class="row h-50">
+                  <div class="col border-right">&nbsp;</div>
+                  <div class="col">&nbsp;</div>
+               </div>
+            </div>
+            <div class="col-sm">
             </div>
          </div>
       </section>
@@ -185,13 +210,38 @@
                            </tr>
                         </tbody>
                      </table>
-                  </div><br><br>
+<!--                   </div><br><br>
                      <a href="#" class="get-btn"><i class="fa fa-download"></i> Will release soon!</a>                        
-                  </div>
+                  </div> -->
                </div>
             </div>
          </div>
       </section>
+<!-- Volunteer -->
+<section id="date">
+   <center>
+      <div class="card" style="width: 90%;">
+         <div class="card-body">
+            <h2 class="text-center title-text">References</h2>
+            <div style="text-align: justify;">
+               <ul class="list-group">
+                 <li class="list-group-item">[1] El-Kassas, Wafaa S., Cherif R. Salama, Ahmed A. Rafea, and Hoda K. Mohamed. "Automatic text summarization: A comprehensive survey." Expert Systems with Applications 165 (2021): 113679.</li>
+                 <li class="list-group-item">[2] Kryściński, Wojciech, Bryan McCann, Caiming Xiong, and Richard Socher. "Evaluating the factual consistency of abstractive text summarization." arXiv preprint arXiv:1910.12840 (2019).</li>
+                 <li class="list-group-item">[3] Gliwa, Bogdan, Iwona Mochol, Maciej Biesek, and Aleksander Wawer. "SAMSum corpus: A human-annotated dialogue dataset for abstractive summarization." arXiv preprint arXiv:1911.12237 (2019</li>
+                 <li class="list-group-item">[4] Agirre, Eneko, Aitor Gonzalez Agirre, Inigo Lopez-Gazpio, Montserrat Maritxalar, German Rigau Claramunt, and Larraitz Uria. "Semeval-2016 task 2: Interpretable semantic textual similarity." In SemEval-2016. 10th International Workshop on Semantic Evaluation; 2016 Jun 16-17; San Diego, CA. Stroudsburg (PA): ACL; 2016. p. 512-24. ACL (Association for Computational Linguistics), 2016.</li>
+                 <li class="list-group-item">[5] Goutam Majumder, Partha Pakray, Ranjita Das and David Eduardo Pinto Avendaño, “Interpretable Semantic Textual Similarity of sentences using alignment of chunks with Classification and Regression“, Applied Intelligence (The International Journal of Research on Intelligent Systems for Real Life Complex Problems) (Published online: 08/03/2021, Springer, Impact Factor: 5.086) (Q2 in SJR citation index) (2021)</li>
+                 <li class="list-group-item">[6] Graham, Yvette. "Re-evaluating automatic summarization with BLEU and 192 shades of ROUGE." In Proceedings of the 2015 conference on empirical methods in natural language processing, pp. 128-137. 2015.</li>
+                 <li class="list-group-item">[7] https://github.com/abisee/cnn-dailymail</li>
+                 <li class="list-group-item">[8] https://aclanthology.org/D18-1448/</li>
+                 <li class="list-group-item">[9] https://github.com/EdinburghNLP/XSum/tree/master/XSum-Dataset</li>
+               </ul>
+               <div>
+         </div>
+      </div>
+      <br><br>
+   </center>
+   <br><br>
+</section>
 
 <!-- dates -->
       <section id="date">
@@ -210,11 +260,11 @@
                         <tbody>
                            <tr>
                               <td>Task Registration</td>
-                              <td>01 March, 2022</td>
+                              <td>14 March, 2022</td>
                            </tr>
                            <tr>
                               <td>Data Released</td>
-                              <td>15 March, 2022</td>
+                              <td>01 April, 2022</td>
                            </tr>
                            <tr>
                               <td>Registration Closed</td>
@@ -250,7 +300,7 @@
                   <center>
                      <ul class="list-group">
                         <!-- <li class="list-group-item"><i class="fa fa-bell" aria-hidden="true">Change the text</i></li> -->
-                        <li class="list-group-item"><i class="fa fa-bell" aria-hidden="true"> The page will be updated, please wait.</i></li>
+                        <li class="list-group-item"><i class="fa fa-bell" aria-hidden="true"> Test data will be sent to the registered participents via E-mail.</i></li>
                      </ul>
                </div>
                </center>
@@ -327,7 +377,7 @@
                </div>
                <div class="col-md-6 col-lg-3">
                   <div class="img-block mb-5">
-                     <img src="images/8.png" class="img-fluid  img-thumbnail rounded-circle loading="lazy" alt="image1">
+                     <img src="images/8.png" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
                      <div class="content mt-2">
                         <h4>Prottay Adhikary</h4>
                      </div>
@@ -470,7 +520,7 @@
                <div class="col-md-12 col-lg-9 mx-auto">
                   <div class="subscribe-inner text-center">
                      <h2>Contact Us</h2>
-                     <h5><i class="fa fa-phone" aria-hidden="true"> <a href="tel:+919545757478" style="color:black">+91 95457 57478</a></i></h5>
+                     <h5><i class="fa fa-phone" aria-hidden="true"> Pankaj Dadure: <a href="tel:+919545757478" style="color:black">+91 95457 57478</a></i></h5>
                      <br>
                      <a href="mailto:pankaj_rs@cse.nits.ac.in " class="get-btn">E-Mail Us</a>                        
                   </div>
